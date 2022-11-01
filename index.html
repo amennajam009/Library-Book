@@ -63,14 +63,14 @@
           <h4 class="mt-4 ms-3">Sophie's World</h4>
           <p>One day fourteen-year-old Sophie Amundsen comes home from school to find in her mailbox two notes, with one question on each: "Who are you?question on each: "Who are you?  </p>
           <p>₨ <del style="color: red;">55,000</del><span class="ms-4">₨40,000</span></p>
-          <a href="https://www.goodreads.com/book/show/10959.Sophie_s_World"><button class="btn btn-danger ms-4 down" type="submit">open it</button></a>
+          <a href="https://www.goodreads.com/book/show/10959.Sophie_s_World"><button class="btn btn-danger ms-4 down" >open it</button></a>
         </article>
         <article class="card">
           <img src="pic/book8.png" alt="exposed brick wall in a hipster cafe" style="height: 390px;">
           <h4 class="mt-4 ms-3">Discipline Is Destiny</h4>
           <p>And being disciplined is something we prove by the life we lead. Ryan explains how self-discipline must be observed physically.how self-discipline must be observed physicallyhow self-discipline must be observed physically</p>
           <p>₨ <del style="color: red;">55,000</del><span class="ms-4">₨40,000</span></p>
-          <a href="https://www.amazon.com/Discipline-Destiny-Power-Self-Control-Virtues-ebook/dp/B09PB1SB72" ><button class="btn btn-danger  down" type="submit">open it</button></a>
+          <a href="https://www.amazon.com/Discipline-Destiny-Power-Self-Control-Virtues-ebook/dp/B09PB1SB72" ><button class="btn btn-danger  down" >open it</button></a>
         </article>
       </section>
       <hr>
@@ -80,10 +80,10 @@
         <table cellpadding="11">
           <tr>
               <td><label for="inputPassword5" class="form-label"> First Name</label>
-                  <input type="text" id="inputPassword5" class="form-control First" aria-describedby="passwordHelpBlock" required ></td>
+                  <input type="text" id="inputPassword5 firstname" class="form-control First" aria-describedby="passwordHelpBlock" required ></td>
       
                   <td><label for="inputPassword5" class="form-label">Last Name</label>
-                    <input type="text" id="inputPassword5" class="form-control Last" aria-describedby="passwordHelpBlock" required >
+                    <input type="text" id="inputPassword5" class="form-control lastname" aria-describedby="passwordHelpBlock" required >
                     </td>
       
                   
@@ -93,15 +93,15 @@
 
           <tr>
             <td><label for="inputPassword5" class="form-label">Email</label>
-                <input type="email"  id="inputPassword5" class="form-control Email" aria-describedby="passwordHelpBlock"  required   >
+                <input type="email"  id="inputPassword5 email" class="form-control Email" aria-describedby="passwordHelpBlock"  required   >
                 </td>
 
                 <td><label for="inputPassword5" class="form-label"> Your Age:</label>
                   <select class="form-select" aria-label="Default select example">
-                    <option selected>5-10</option>
-                    <option value="1">11-17</option>
-                    <option value="2">18-28</option>
-                    <option value="3">30-50</option>
+                    <option selected id="age">5-10</option>
+                    <option value="1" id="age">11-17</option>
+                    <option value="2" id="age">18-28</option>
+                    <option value="3" id="age">30-50</option>
                   </select></td>
           </tr>
         </tr>
@@ -110,31 +110,37 @@
 
       <tr>
         <td><label for="inputPassword5" class="form-label">Do You Love Reading Why?</label>
-            <input type="text"  id="inputPassword5" class="form-control Contact Seat" aria-describedby="passwordHelpBlock"   placeholder="Why you love reading?" required >
+            <input type="text"  id="inputPassword5 reading" class="form-control Contact Seat" aria-describedby="passwordHelpBlock"   placeholder="Why you love reading?" required >
             </td>
 
             <td><label for="inputPassword5" class="form-label">Tell us About Your fav Book ;)</label>
-              <input type="text"  id="inputPassword5" class="form-control Contact Seat" aria-describedby="passwordHelpBlock"   placeholder="Your Fav Book" required >
+              <input type="text"  id="inputPassword5 tellus" class="form-control Contact Seat" aria-describedby="passwordHelpBlock"   placeholder="Your Fav Book" required >
               </td>
     </tr>
 
     <tr>
       <td>
         <div class="form-floating">
-          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px ; width: 300px;"></textarea>
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2 feedback" style="height: 100px ; width: 300px;"></textarea>
           <label for="floatingTextarea2">FeedBack</label>
         </div>
       </td>
     </tr>
     <tr>
       <td>
-     <button class="btn btn-warning w-100 sub">Submit</button>
+     <button class="btn btn-warning w-100 sub" type="submit" id="submit">Submit</button>
       </td>
     </tr>
         </table>
       </form>
 
 
+
+
+
+
+      <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
       <script src="https://kit.fontawesome.com/032176dfd7.js" crossorigin="anonymous"></script>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="index.js"></script>
